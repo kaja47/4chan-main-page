@@ -1,0 +1,29 @@
+{#content}
+
+<div class="upper-row">
+{foreach $boardsGroups as $boards}
+{foreach $boards as $b => $title}<a n:href="board $b">/{$b}/</a>{sep} - {/sep}{/foreach}<br />
+{/foreach}
+</div>
+
+<div n:foreach="$threads as $p" class="post">
+  <div style="float: right;">{$p->counts->posts} posts {$p->counts->images} images</div>
+
+  <div class="images" style="height: {$p->image->thumbHeight}px; float: left;">
+    <a class="imgbox" href="http://boards.4chan.org/{$board}/res/{$p->threadId}" style="width: 250px; height: {$p->image->thumbHeight}px;">
+      <img src="{link image $p->slug}" style="width: {$p->image->thumbWidth}px; height: {$p->image->thumbHeight}px;" />
+    </a>
+  </div>
+
+  <blockquote>
+    <strong n:if="$p->title">{$p->title}</strong> <a href="http://boards.4chan.org/{$board}/res/{$p->threadId}">{$p->id}</a>: {$p->text}
+  </blockquote>
+
+  <blockquote n:foreach="$p->replies as $r">
+    <strong n:if="$r->title">{$r->title}</strong> <a href="http://boards.4chan.org/{$board}/res/{$p->threadId}">{$r->id}</a>: {$r->text}
+  </blockquote>
+
+  <br clear="all" />
+</div>
+
+{/#}

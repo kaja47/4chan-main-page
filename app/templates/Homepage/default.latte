@@ -1,0 +1,16 @@
+{#content}
+
+  <div style="float: right; font-family: Georgia; padding-right: 3em; font-style: italic;">
+    <h1>4chan main page</h1>
+  </div>
+
+
+  {foreach $boardsGroups as $boards}
+  <ul style="float: left; font-family: Georgia; font-style: italic; font-size: 1.4em;">
+    <li n:foreach="$boards as $b => $title">/<a n:href="board $b">{$b}</a>/ - <a n:href="board $b">{$title}</a></li>
+  </ul>
+  {/foreach}
+
+  <br clear=all />
+
+{/#}

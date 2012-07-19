@@ -1,0 +1,48 @@
+html { font: .8em/1.4 arial; } 
+body { background: #D6DAF0; color: black; margin: 0; }
+
+img { border: none; }
+
+a, a:visited, .id { color: #111; text-shadow: 1px 1px 0 white; }
+a:hover, .id:hover { color: white; background-color: #111; text-shadow: none; padding: 0.2em 0.4em; margin: -0.2em -0.4em; }
+.id { cursor: pointer; }
+
+h1 { font-size: 2.9em; margin: .5em 0 0; text-shadow: 1px 1px 0 white; }
+h1 a { text-decoration: none; }
+
+div.subtitle { margin-bottom: .8em; font-size: .9em; font-style: italic; }
+.nsfw { font-size: 0.4em; font-weight: normal; }
+
+div.upper-row { background: #111; margin: -1em -1em 0; padding: 0.5em; }
+div.bottom-row { background: #111; margin: 0 -1em -1em; padding: 0.5em; clear: both; }
+.admin-link { float: right; }
+
+.upper-row a, .bottom-row a { color: white; text-shadow: none; }
+div.content { max-width: 1050px; margin: 0 auto 0; background: #fcfcf0; box-shadow: #111 0px 0px 20px; padding: 1em; }
+
+.thread-end { border-bottom: 1px solid #111; padding-bottom: .1em; margin-bottom: .1em; clear: left; }
+.post { clear: left; border-bottom: 1px dotted gray; padding-top: 3px; padding: .2em; }
+.thread .post:last-child { border-bottom: none; }
+.title-line {  }
+.name { color: #EB3333; font-weight: bold; }
+.trip { color: #EB3333; }
+.capcode { color: red; font-weight: bold; }
+blockquote { margin: .3em 0; font-size: 10pt; }
+blockquote br { line-height: .6em; }
+.greentext { color: #5F6900; font-weight: normal; }
+
+.images { width: 250px; margin-left: 5px; position: relative; width: 250px; }
+.images-thumbs { position: absolute; left: 0px; bottom: 0px; height: 62px; }
+.images-thumbs img { width: 62px; height: 62px; box-shadow: #111 0px 0px 6px; }
+.imgbox { display: block; position: relative; float: left; text-shadow: none; }
+.imgbox img { margin-right: 5px; margin-left: -5px; }
+.imgbox:hover { background: none; }
+.imgtitle { position: absolute; font-size: 0.75em; display: none; background: black; opacity: 0.7; margin-left: -5px; }
+.imgbox:hover .imgtitle { display: block; }
+
+.rules { font-size: .9em }
+
+div.ban { color: red; }
+
+.error { color: white; border: 1px solid red; background: red; padding: .5em; }
+.errors { color: white; border: 1px solid red; background: red; padding: .5em; }
